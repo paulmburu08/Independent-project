@@ -1,0 +1,29 @@
+h1{
+  text-align: center;
+}
+
+#profession{
+  text-align: center;
+  font-style: italic;
+}
+
+.position{
+  float: right;
+}
+
+body{
+  background-color: burlywood;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.important{ 
+  background-color: wheat;
+  padding: 8px;
+}
+
+.unimportant{
+  background-color: rgb(236, 218, 184);
+  padding: 8px;
+}
