@@ -1,58 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Paul's Portfolio</title>
+    <title>Paul Mburu</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/LogoMakr-6m6Heb.png"/>
   </head>
   <body>
-    <h1><b>Paul Mburu</b></h1>
-    <h5 id="profession">Software developer.Photographer.Adventurer</h5>
-    <span class="position">
-      <img height="500px" src="image1/paul.jpg" alt="Paul's photo">
-    </span>
-    <div class="important">
-      <h2>About me</h2>
-      <p>Photography has been a passion ever since i was a child.I went through primary at Fountain Junior school
-		    and high school at <a href="https://www.aquinashigh.sc.ke/"><em>Aquinas High school</em></a>.I later 
-			  ended up at <a href="https://www.cuk.ac.ke/"><em>co-operative university</em></a> doing Tourism management
-			  where i wanted to incorporate Tourism and Photography.I recently started software development and love it! 
-        Although just a beginner,i believe i am going to be <strong>among the best of the best.</strong></p>
+
+    <!-- loader -->
+
+    <div class="loader_bg">
+      <div class="loader"></div>
     </div>
-    <div class="unimportant"> 
-		  <h2>Job experience</h2>
-		  <ul>
-			  <li><a href="https://www.anapendeza.co.ke/">Anapendeza</a> - Volunteer.They help find 
-				  work for persons with disabilities.</li>
-			  <li>Fountain Junior School - Volunteer.Taught English and Maths</li>
-			  <li><a href="http://segurotoursandtravel.com/">Seguro tours and travel</a> - Industial attachment</li>
+  
+    <header>
+      <div class="logo">
+        <img src="images/LogoMakr-9sliop.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, i am <strong>Paul Mburu</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">fullstack dev</p>
+      <img class="intro__img" src="images/1601654599760.jpg" alt="a picture of Paul Mburu">
+    </section>
+    
+    <!-- My services -->
+
+    <section class="my-services" id="services">
+      <h2 class="section__title section_title--services">What i do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Fullstack development</h3>
+          <p>I am proficient in a range of modern technologies including Python,Django, PostgreSQL, HTML, CSS and JavaScript.
+            I can build a fully functional and responsive website from the front-end to the back-end using the various technologies
+            mentioned above.
+          </p>
+        </div>
+
+      </div>
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">Fullstack developer from Nairobi</p>
+
+      <div class="about-me__body">
+        <p>I'm a junior fullstack developer with a passion for backend. I enjoy programming and learning new things each and everyday 
+          as I grow not only in my skills, but also as a person. Fueled by a clear vision of the work i want to do and the things I 
+          want to achieve, I put in the work required and I'm also not afraid to pursue new ideas in search of more knowledge. I am
+          a fast learner, able to pick up new skills when required.
+        </p>
+        <p>
+          Well, when not programming i enjoy gaming, travel and hanging out with my friends among other activities.
+        </p>
+      </div>
+
+      <img class="about-me__img" src="images/2019-05-17 01.44.57 1.jpg" alt="A picture of Paul Mburu">
+    </section>
+
+    <!-- My work -->
+
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">A range of my work</p>
+
+      <div class="portfolio"> 
+        <a href="https://paulmburu08.github.io/Independent-project-3/" class="portfolio__item">
+          <img src="images/delani.png" alt="portfolio image" class="portfolio__img">
+        </a>
+
+        <a href="https://paul-merit.herokuapp.com/accounts/login/?next=/" class="portfolio__item">
+          <img src="images/merit.png" alt="portfolio image" class="portfolio__img">
+        </a>
+
+        <a href="https://paulmburu08.github.io/Angular-week-2/home" class="portfolio__item">
+          <img src="images/repo.png" alt="portfolio image" class="portfolio__img">
+        </a>
+
+        <a href="https://paulgallery.herokuapp.com/" class="portfolio__item">
+          <img src="images/gallery.png" alt="portfolio image" class="portfolio__img">
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <a href="paulmburu08@gmail.com" class="footer__link">paulmburu08@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/paulmburu08">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/paul-mburu-njuguna-882712190/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/LordGunaz">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
       </ul>
-    </div>
-    <div class="important">
-		  <h2>Hobbies</h2>
-		  <ol>
-			  <li>Volunteering</li>
-			  <li>Traveling</li>
-			  <li>Photography</li>
-        <li>Music</li>
-      </ol>
-      <p>For now my interest is to learn softaware development and use it for the greater good.My skills include dancing,
-      drama and basketball.</p>
-    </div>
-    <div class="unimportant">
-		  <h2>Projects</h2>
-		  <p>This is are links to projects i have been working on ever since i joined Moringa school.</p>
-		  <ol>
-        <li><a href="https://github.com/paulmburu08/hello-world">hello-world</a> - This link is to the first 
-        website i worked on,on the first day of learning.It basically has a title,header and paragraph.Language 
-        used is HTML.It is the repository link on my Github account.</li>
-        <li><a href="https://github.com/paulmburu08/cookie-recipe">cookie-recipe</a> - This link is to an HTML 
-        file i had cloned from another account,corrected the mistakes as required and pushed it back to my 
-        Github account.Language used is HTML.It is the repository link on my Github account.</li>
-        <li><a href="https://paulmburu08.github.io/My-first-webpage/">My-first-webpage</a> - This link is to a webpage
-        i made consisting of title,headers,paragraphs,a list,links and an image.Language used are HTML and CSS.
-        It is the gh-pages link.</li>      
-      </ol>
-    </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
